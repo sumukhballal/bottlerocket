@@ -131,6 +131,7 @@ members = [
     "settings-extensions/aws",
     "settings-extensions/container-registry",
     "settings-extensions/kernel",
+    "settings-extensions/metrics",
     "settings-extensions/motd",
     "settings-extensions/ntp",
     "settings-extensions/updates",
@@ -150,7 +151,7 @@ members = [
 
     "shimpei",
 
-    "xfscli",
+    "xfscli"
 ]
 
 [profile.release]
