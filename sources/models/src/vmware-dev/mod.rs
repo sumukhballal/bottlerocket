@@ -2,7 +2,7 @@ use model_derive::model;
 use std::collections::HashMap;
 
 use crate::{
-    BootSettings, BootstrapContainer, DnsSettings, HostContainer, MetricsSettings, NetworkSettings,
+    BootSettings, BootstrapContainer, DnsSettings, HostContainer, NetworkSettings,
     OciHooks, PemCertificate,
 };
 use modeled_types::Identifier;
@@ -19,7 +19,7 @@ struct Settings {
     network: NetworkSettings,
     kernel: settings_extension_kernel::KernelSettingsV1,
     boot: BootSettings,
-    metrics: MetricsSettings,
+    metrics: settings_extension_metrics::MetricsSettingsV1,
     pki: HashMap<Identifier, PemCertificate>,
     container_registry: settings_extension_container_registry::RegistrySettingsV1,
     oci_hooks: OciHooks,

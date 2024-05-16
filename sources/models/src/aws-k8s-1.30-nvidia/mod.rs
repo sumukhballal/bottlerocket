@@ -1,6 +1,6 @@
 use crate::{
     AutoScalingSettings, BootSettings, BootstrapContainer, CloudFormationSettings,
-    ContainerRuntimeSettings, DnsSettings, HostContainer, KubernetesSettings, MetricsSettings,
+    ContainerRuntimeSettings, DnsSettings, HostContainer, KubernetesSettings,
     NetworkSettings, OciDefaults, OciHooks, PemCertificate,
 };
 use modeled_types::Identifier;
@@ -22,7 +22,7 @@ struct Settings {
     kernel: settings_extension_kernel::KernelSettingsV1,
     boot: BootSettings,
     aws: settings_extension_aws::AwsSettingsV1,
-    metrics: MetricsSettings,
+    metrics: settings_extension_metrics::MetricsSettingsV1,
     pki: HashMap<Identifier, PemCertificate>,
     container_registry: settings_extension_container_registry::RegistrySettingsV1,
     oci_defaults: OciDefaults,
